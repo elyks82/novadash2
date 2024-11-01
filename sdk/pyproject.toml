@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "novadash"
+version = "0.1.1"
+authors = [
+    { name = "novadash.art", email = "gene@novadash.art" }
+]
+description = "Client library novadash"
+readme = "README.md"
+license = { file = "LICENSE" }
+dependencies = [
+    "requests>=2.25.1",
+    "rich==13.7.1",
+    "websocket-client==1.8.0",
+    "httpx>=0.25.0",
+    "aiofiles>=23.2.1",
+]
+
+[project.scripts]
+novadash = "novadash.cli:main"
+
+
